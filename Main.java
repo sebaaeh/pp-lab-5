@@ -18,11 +18,11 @@ public class Main {
 
             for (Person person : people) {
                 int value = MathUtils.add(person.getAge(), b);
-                String message = "The value for " + person.getName() + " is " + value;
+                String message = "wiek dla " + person.getName() + " to " + value;
                 sendMessage(message);
             }
         } catch (InvalidAgeException e) {
-            System.err.println("Invalid age: " + e.getMessage());
+            System.err.println("Zły wiek: " + e.getMessage());
         }
     }
 
